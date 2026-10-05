@@ -4,104 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taras's Resume</title>
+    <meta name="description" content="Taras - Web Developer & Designer. Portfolio, skills and contact information.">
+    <meta name="theme-color" content="#4c1d95">
+    <meta property="og:title" content="Taras's Resume">
+    <meta property="og:description" content="Web Developer & Designer creating beautiful and functional web experiences.">
+    <meta property="og:type" content="website">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 min-h-screen text-white font-['Poppins']">
-    <!-- Hero Section -->
-    <div class="container mx-auto px-4 py-16">
-        <div class="flex flex-col md:flex-row items-center justify-between">
-            <div class="md:w-1/2 mb-8 md:mb-0">
-                <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-title">
-                    Taras
-                </h1>
-                <p class="text-xl md:text-2xl text-purple-300 mb-6 animate-subtitle">
-                    Web Developer & Designer
-                </p>
-                <div class="space-y-4">
-                    <p class="text-lg text-purple-200">
-                        Passionate about creating beautiful and functional web experiences
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 glass" aria-label="Main">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold">Taras</a>
+            <ul class="flex space-x-6 text-purple-200">
+                <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
+                <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="container mx-auto px-4 py-16">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-title">
+                        Taras
+                    </h1>
+                    <p class="text-xl md:text-2xl text-purple-300 mb-6 animate-subtitle">
+                        Web Developer & Designer
                     </p>
-                    <div class="flex space-x-4">
-                        <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
-                            Contact Me
-                        </a>
-                        <a href="#portfolio" class="border-2 border-purple-600 text-purple-300 hover:bg-purple-600 hover:text-white px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
-                            View Portfolio
-                        </a>
+                    <div class="space-y-4">
+                        <p class="text-lg text-purple-200">
+                            Passionate about creating beautiful and functional web experiences
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
+                                Contact Me
+                            </a>
+                            <a href="#portfolio" class="border-2 border-purple-600 text-purple-300 hover:bg-purple-600 hover:text-white px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
+                                View Portfolio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <div class="relative w-64 h-64 mx-auto">
+                        <div class="absolute inset-0 bg-purple-600 rounded-full opacity-20 animate-pulse"></div>
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full animate-spin-slow"></div>
+                        <div class="absolute inset-0 overflow-hidden rounded-full border-4 border-white/30">
+                            <img src="https://avatars.githubusercontent.com/u/160139015?v=4" alt="Portrait of Taras" width="256" height="256" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="md:w-1/2 relative">
-                <div class="relative w-64 h-64 mx-auto">
-                    <div class="absolute inset-0 bg-purple-600 rounded-full opacity-20 animate-pulse"></div>
-                    <div class="absolute inset-0 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full animate-spin-slow"></div>
-                    <div class="absolute inset-0 overflow-hidden rounded-full border-4 border-white/30">
-                        <img src="https://avatars.githubusercontent.com/u/160139015?v=4" alt="Profile Picture" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container mx-auto px-4 py-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">About Me</h2>
+            <div class="max-w-3xl mx-auto bg-white/10 backdrop-blur-lg rounded-2xl p-8">
+                <p class="text-lg text-purple-100 mb-6">
+                    I'm a passionate web developer with a keen eye for design and a love for creating engaging user experiences.
+                    My journey in web development started with a curiosity about how websites work, and that curiosity has evolved
+                    into a professional pursuit of creating beautiful and functional web applications.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                    <div class="bg-white/5 p-4 rounded-lg text-center">
+                        <h3 class="text-xl font-semibold mb-2">Frontend</h3>
+                        <p class="text-purple-200">HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-lg text-center">
+                        <h3 class="text-xl font-semibold mb-2">Design</h3>
+                        <p class="text-purple-200">UI/UX, Figma</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-lg text-center">
+                        <h3 class="text-xl font-semibold mb-2">Tools</h3>
+                        <p class="text-purple-200">Git, VS Code</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-lg text-center">
+                        <h3 class="text-xl font-semibold mb-2">Frameworks</h3>
+                        <p class="text-purple-200">React, Tailwind</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- About Section -->
-    <div class="container mx-auto px-4 py-16">
-        <h2 class="text-4xl font-bold mb-8 text-center">About Me</h2>
-        <div class="max-w-3xl mx-auto bg-white/10 backdrop-blur-lg rounded-2xl p-8">
-            <p class="text-lg text-purple-100 mb-6">
-                I'm a passionate web developer with a keen eye for design and a love for creating engaging user experiences. 
-                My journey in web development started with a curiosity about how websites work, and that curiosity has evolved 
-                into a professional pursuit of creating beautiful and functional web applications.
-            </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-                <div class="bg-white/5 p-4 rounded-lg text-center">
-                    <h3 class="text-xl font-semibold mb-2">Frontend</h3>
-                    <p class="text-purple-200">HTML, CSS, JavaScript</p>
-                </div>
-                <div class="bg-white/5 p-4 rounded-lg text-center">
-                    <h3 class="text-xl font-semibold mb-2">Design</h3>
-                    <p class="text-purple-200">UI/UX, Figma</p>
-                </div>
-                <div class="bg-white/5 p-4 rounded-lg text-center">
-                    <h3 class="text-xl font-semibold mb-2">Tools</h3>
-                    <p class="text-purple-200">Git, VS Code</p>
-                </div>
-                <div class="bg-white/5 p-4 rounded-lg text-center">
-                    <h3 class="text-xl font-semibold mb-2">Frameworks</h3>
-                    <p class="text-purple-200">React, Tailwind</p>
-                </div>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="container mx-auto px-4 py-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">Portfolio</h2>
+            <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-6">
+                <a href="https://github.com/Taras2713/Taras" target="_blank" rel="noopener noreferrer" class="block bg-white/10 backdrop-blur-lg rounded-2xl p-6 transition-all duration-300 transform hover:scale-105 hover-glow">
+                    <h3 class="text-xl font-semibold mb-2">Resume Website</h3>
+                    <p class="text-purple-200 mb-4">This site: an anime-styled resume built with HTML, Tailwind CSS and custom animations.</p>
+                    <span class="text-sm text-purple-300">HTML · Tailwind · CSS</span>
+                </a>
+                <a href="https://github.com/Taras2713" target="_blank" rel="noopener noreferrer" class="block bg-white/5 border border-dashed border-purple-500 rounded-2xl p-6 transition-all duration-300 transform hover:scale-105">
+                    <h3 class="text-xl font-semibold mb-2">More on GitHub</h3>
+                    <p class="text-purple-200 mb-4">New projects are added here as they are built.</p>
+                    <span class="text-sm text-purple-300">github.com/Taras2713</span>
+                </a>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Contact Section -->
-    <div id="contact" class="container mx-auto px-4 py-16">
-        <h2 class="text-4xl font-bold mb-8 text-center">Get in Touch</h2>
-        <div class="max-w-xl mx-auto">
-            <form class="space-y-6">
-                <div>
-                    <label class="block text-sm font-medium mb-2">Name</label>
-                    <input type="text" class="w-full px-4 py-3 bg-white/10 border border-purple-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium mb-2">Email</label>
-                    <input type="email" class="w-full px-4 py-3 bg-white/10 border border-purple-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium mb-2">Message</label>
-                    <textarea rows="4" class="w-full px-4 py-3 bg-white/10 border border-purple-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
-                    Send Message
-                </button>
-            </form>
-        </div>
-    </div>
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto px-4 py-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">Get in Touch</h2>
+            <div class="max-w-xl mx-auto">
+                <!-- TODO: set action to a form backend (e.g. Formspree) and method="POST" to receive messages -->
+                <form id="contact-form" class="space-y-6" novalidate>
+                    <div>
+                        <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                        <input id="name" name="name" type="text" required autocomplete="name" class="w-full px-4 py-3 bg-white/10 border border-purple-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                        <input id="email" name="email" type="email" required autocomplete="email" class="w-full px-4 py-3 bg-white/10 border border-purple-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 bg-white/10 border border-purple-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                    <p id="form-status" role="status" aria-live="polite" class="text-center text-purple-200 min-h-[1.5rem]"></p>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="container mx-auto px-4 py-8 text-center text-purple-300">
-        <p>&copy; 2024 Taras. All rights reserved.</p>
+        <p>&copy; <span id="year">2025</span> Taras. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('form-status');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (!form.checkValidity()) {
+                status.textContent = 'Please fill in all fields with a valid email.';
+                form.reportValidity();
+                return;
+            }
+            // Replace with a fetch() to your form backend once configured.
+            status.textContent = 'Thanks! Your message has been noted.';
+            form.reset();
+        });
+    </script>
 </body>
-</html> 
+</html>
